@@ -1,3 +1,11 @@
+import { Scale } from './components/scale';
+
 export function App() {
-	return <h1>Hello, World!</h1>;
+	return (
+		<>
+			<h1>Motion animations</h1>
+
+			<Scale />
+		</>
+	);
 }
