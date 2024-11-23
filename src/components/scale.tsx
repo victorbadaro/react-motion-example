@@ -11,6 +11,9 @@ export function Scale({ value = 1.2 }: ScaleProps) {
 			whileHover={{
 				scale: value
 			}}
+			whileTap={{
+				scale: value - 0.1
+			}}
 		>
 			Scale
 			<span className="text-xs font-normal">{value}x</span>
