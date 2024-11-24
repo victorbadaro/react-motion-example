@@ -1,3 +1,4 @@
+import { Rotate } from './components/rotate';
 import { Scale } from './components/scale';
 
 export function App() {
@@ -8,6 +9,7 @@ export function App() {
 					<h1 className="text-4xl font-semibold">Motion animations</h1>
 
 					<Scale />
+					<Rotate />
 				</div>
 			</div>
 		</main>
