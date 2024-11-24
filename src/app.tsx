@@ -8,8 +8,10 @@ export function App() {
 				<div className="space-y-8">
 					<h1 className="text-4xl font-semibold">Motion animations</h1>
 
-					<Scale />
-					<Rotate />
+					<div className="flex flex-wrap items-center justify-start gap-4">
+						<Scale />
+						<Rotate />
+					</div>
 				</div>
 			</div>
 		</main>
