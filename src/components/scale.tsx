@@ -1,13 +1,15 @@
 import { motion } from 'motion/react';
+import type { ComponentProps } from 'react';
+import { twMerge } from 'tailwind-merge';
 
-interface ScaleProps {
+interface ScaleProps extends ComponentProps<'div'> {
 	value?: number;
 }
 
-export function Scale({ value = 1.2 }: ScaleProps) {
+export function Scale({ value = 1.2, className }: ScaleProps) {
 	return (
 		<motion.div
-			className="flex flex-col items-center justify-center size-20 rounded-lg font-semibold cursor-pointer bg-lime-400 text-lime-950"
+			className={twMerge('flex flex-col items-center justify-center size-20 rounded-lg font-semibold cursor-pointer bg-lime-400 text-lime-950', className)}
 			whileHover={{
 				scale: value
 			}}

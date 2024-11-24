@@ -1,13 +1,15 @@
 import { motion } from 'motion/react';
+import type { ComponentProps } from 'react';
+import { twMerge } from 'tailwind-merge';
 
-interface RotateProps {
+interface RotateProps extends ComponentProps<'div'> {
 	value?: number;
 }
 
-export function Rotate({ value = 90 }: RotateProps) {
+export function Rotate({ value = 90, className }: RotateProps) {
 	return (
 		<motion.div
-			className="flex flex-col items-center justify-center size-20 rounded-lg font-semibold cursor-pointer bg-lime-400 text-lime-950"
+			className={twMerge('flex flex-col items-center justify-center size-20 rounded-lg font-semibold cursor-pointer bg-lime-400 text-lime-950', className)}
 			whileHover={{
 				rotate: value
 			}}
