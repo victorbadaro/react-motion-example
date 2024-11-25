@@ -1,3 +1,4 @@
+import { FadeOut } from './components/fade-out';
 import { Rotate } from './components/rotate';
 import { Scale } from './components/scale';
 
@@ -11,6 +12,7 @@ export function App() {
 					<div className="flex flex-wrap items-center justify-start gap-4">
 						<Scale />
 						<Rotate />
+						<FadeOut />
 					</div>
 				</div>
 			</div>
