@@ -1,3 +1,4 @@
+import { FadeIn } from './components/fade-in';
 import { FadeOut } from './components/fade-out';
 import { Rotate } from './components/rotate';
 import { Scale } from './components/scale';
@@ -13,6 +14,7 @@ export function App() {
 						<Scale />
 						<Rotate />
 						<FadeOut />
+						<FadeIn />
 					</div>
 				</div>
 			</div>
